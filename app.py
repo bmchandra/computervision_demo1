@@ -81,7 +81,7 @@ def create_row_col(uploaded_file):
 
     
 if __name__=='__main__':
-    model_path=r'.\best.pt' 
+    model_path= os.path.join(os.path.dirname(__file__), 'best.pt') #r'.\best.pt' 
     image_path=r'C:\Users\bchandran\OneDrive - Ventia\Ben Stoner\ComputerVisionDemo\images'
     inf_image_path = r'C:\Users\bchandran\OneDrive - Ventia\Ben Stoner\ComputerVisionDemo\inference images'
     main(model_path)
